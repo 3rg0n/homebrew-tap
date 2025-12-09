@@ -5,23 +5,23 @@
 class Bjarne < Formula
   desc "AI-assisted C/C++ code generation with rigorous validation"
   homepage "https://github.com/3rg0n/bjarne"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   depends_on "podman" => :optional
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/3rg0n/bjarne/releases/download/v0.1.3/bjarne_0.1.3_darwin_amd64.tar.gz"
-      sha256 "6d3ce52eeb9484860af43b1108d7a0c63f2748f819936ac0075af29864468220"
+      url "https://github.com/3rg0n/bjarne/releases/download/v0.1.4/bjarne_0.1.4_darwin_amd64.tar.gz"
+      sha256 "6020bf2dadb4367ac418260943586c1480a24d469f76f7c9374f75a92873a5f1"
 
       def install
         bin.install "bjarne"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/3rg0n/bjarne/releases/download/v0.1.3/bjarne_0.1.3_darwin_arm64.tar.gz"
-      sha256 "e05534930616c463c7fec816eac5effa5d06cfcd0b4feab94c9a283e9d08c6b1"
+      url "https://github.com/3rg0n/bjarne/releases/download/v0.1.4/bjarne_0.1.4_darwin_arm64.tar.gz"
+      sha256 "d70cad80e19a98bccda4a9465e132aa5b5bb8ba556a9e99e086cf282983b6897"
 
       def install
         bin.install "bjarne"
@@ -31,15 +31,15 @@ class Bjarne < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/3rg0n/bjarne/releases/download/v0.1.3/bjarne_0.1.3_linux_amd64.tar.gz"
-      sha256 "1d476f4268a50909c5abc94fa8068efa531a8bb2a2d436e6bd217a3043a280e3"
+      url "https://github.com/3rg0n/bjarne/releases/download/v0.1.4/bjarne_0.1.4_linux_amd64.tar.gz"
+      sha256 "b5b44ae73a425c40047d2b4d4f621b71293414ddac43056db3894bd5bf2202da"
       def install
         bin.install "bjarne"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/3rg0n/bjarne/releases/download/v0.1.3/bjarne_0.1.3_linux_arm64.tar.gz"
-      sha256 "1fba5d82ea661a4ece4e4a6399e509752c96bea2508cfbe4a598d90c60cc53b3"
+      url "https://github.com/3rg0n/bjarne/releases/download/v0.1.4/bjarne_0.1.4_linux_arm64.tar.gz"
+      sha256 "bbc0ef6df682d56338b8cd4903004c5b7f99a420bd82b1355c211a1b92c965d1"
       def install
         bin.install "bjarne"
       end

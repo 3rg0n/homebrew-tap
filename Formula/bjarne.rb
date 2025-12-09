@@ -13,7 +13,7 @@ class Bjarne < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/3rg0n/bjarne/releases/download/v0.1.3/bjarne_0.1.3_darwin_amd64.tar.gz"
-      sha256 "645dedd4c0644328bc899c19ab5d3577c96a7f9346147847250d8929d2c365ef"
+      sha256 "6d3ce52eeb9484860af43b1108d7a0c63f2748f819936ac0075af29864468220"
 
       def install
         bin.install "bjarne"
@@ -21,7 +21,7 @@ class Bjarne < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/3rg0n/bjarne/releases/download/v0.1.3/bjarne_0.1.3_darwin_arm64.tar.gz"
-      sha256 "8dba341ca961d518f925dcfe0ba408aa0b901f7808dc49309e2f377f235871c0"
+      sha256 "e05534930616c463c7fec816eac5effa5d06cfcd0b4feab94c9a283e9d08c6b1"
 
       def install
         bin.install "bjarne"
@@ -32,14 +32,14 @@ class Bjarne < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/3rg0n/bjarne/releases/download/v0.1.3/bjarne_0.1.3_linux_amd64.tar.gz"
-      sha256 "6fbed9c7f7059238f89e892526c400c0be1b276cffc3f979c2e4e25c3ad4b176"
+      sha256 "1d476f4268a50909c5abc94fa8068efa531a8bb2a2d436e6bd217a3043a280e3"
       def install
         bin.install "bjarne"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/3rg0n/bjarne/releases/download/v0.1.3/bjarne_0.1.3_linux_arm64.tar.gz"
-      sha256 "15f3b966aef419dda49f0c9182e53d33438665bf7b3258dba75d79c623fcff46"
+      sha256 "1fba5d82ea661a4ece4e4a6399e509752c96bea2508cfbe4a598d90c60cc53b3"
       def install
         bin.install "bjarne"
       end
